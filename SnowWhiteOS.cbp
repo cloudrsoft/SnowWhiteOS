@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="SnowWhiteOS" />
+		<Option makefile_is_custom="1" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="all">
+				<Option output="build/SnowWhiteOS" prefix_auto="1" extension_auto="1" />
+				<Option object_output="build/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+			<Target title="run">
+				<Option output="SnowWhiteOS" prefix_auto="1" extension_auto="1" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+			</Target>
+			<Target title="clean">
+				<Option output="SnowWhiteOS" prefix_auto="1" extension_auto="1" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="Makefile">
+			<Option target="all" />
+			<Option target="run" />
+		</Unit>
+		<Unit filename="src/boot/arch/x86_64/boot.asm">
+			<Option target="all" />
+			<Option target="run" />
+		</Unit>
+		<Unit filename="src/boot/arch/x86_64/linker.ld">
+			<Option target="all" />
+			<Option target="run" />
+		</Unit>
+		<Unit filename="src/kernel/entry.s">
+			<Option target="all" />
+			<Option target="run" />
+		</Unit>
+		<Unit filename="src/kernel/main.cpp">
+			<Option target="all" />
+			<Option target="run" />
+		</Unit>
+		<Unit filename="src/kernel/types.h">
+			<Option target="all" />
+			<Option target="run" />
+		</Unit>
+		<Unit filename="src/kernel/vbe.cpp">
+			<Option target="all" />
+			<Option target="run" />
+		</Unit>
+		<Unit filename="src/kernel/vbe.h">
+			<Option target="all" />
+			<Option target="run" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
